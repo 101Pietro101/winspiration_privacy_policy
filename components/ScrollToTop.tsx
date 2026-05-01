@@ -31,29 +31,57 @@
  * Il presente avviso di copyright sarà regolato e interpretato in conformità con le leggi vigenti. Qualsiasi controversia derivante da o relativa al presente avviso di copyright sarà soggetta alla giurisdizione esclusiva dei tribunali di competenza.
  */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Sidebar from '@/components/Sidebar';
-import PrivacyContent from '@/components/PrivacyContent';
-import ScrollToTop from '@/components/ScrollToTop';
-import { getPrivacyPolicy } from '@/lib/privacy';
+"use client";
 
-export default function Home() {
-  const { introLines, sections } = getPrivacyPolicy();
+import { useEffect, useState } from 'react';
+
+export default function ScrollToTop() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <Sidebar sections={sections} />
-          <PrivacyContent introLines={introLines} sections={sections} />
-        </div>
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white shadow-lg transition-all hover:bg-zinc-800 hover:scale-110 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          aria-label="Scroll to top"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            stroke="currentColor"
+            className="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+            />
+          </svg>
+        </button>
+      )}
+    </>
   );
 }

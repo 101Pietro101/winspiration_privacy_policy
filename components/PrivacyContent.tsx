@@ -31,29 +31,76 @@
  * Il presente avviso di copyright sarà regolato e interpretato in conformità con le leggi vigenti. Qualsiasi controversia derivante da o relativa al presente avviso di copyright sarà soggetta alla giurisdizione esclusiva dei tribunali di competenza.
  */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Sidebar from '@/components/Sidebar';
-import PrivacyContent from '@/components/PrivacyContent';
-import ScrollToTop from '@/components/ScrollToTop';
-import { getPrivacyPolicy } from '@/lib/privacy';
+import Image from 'next/image';
+import { Section } from '@/lib/privacy';
 
-export default function Home() {
-  const { introLines, sections } = getPrivacyPolicy();
+interface PrivacyContentProps {
+  introLines: string[];
+  sections: Section[];
+}
 
+export default function PrivacyContent({ introLines, sections }: PrivacyContentProps) {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <Sidebar sections={sections} />
-          <PrivacyContent introLines={introLines} sections={sections} />
-        </div>
-      </main>
+    <article className="flex-1 min-w-0">
+      {/* Brand Banner */}
+      <div className="mb-12 overflow-hidden rounded-2xl shadow-xl border border-zinc-200 dark:border-zinc-800">
+        <Image
+          src="/images/feature-graphic.png"
+          alt="Winspiration Brand"
+          width={1024}
+          height={500}
+          className="w-full object-cover"
+          priority
+        />
+      </div>
 
-      <Footer />
-      <ScrollToTop />
-    </div>
+      {/* Introduction */}
+      <div className="mb-12 border-b border-zinc-100 pb-12 dark:border-zinc-800">
+        <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
+          Privacy Policy
+        </h1>
+        <div className="space-y-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+          {introLines.map((line, idx) => (
+            <p key={idx} className={line.trim() === '' ? 'h-4' : ''}>
+              {line}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      {/* Sections */}
+      <div className="space-y-16">
+        {sections.map((section) => (
+          <section key={section.id} id={section.id} className="scroll-mt-24">
+            <h2 className={`mb-6 font-bold tracking-tight text-zinc-900 dark:text-white ${
+              section.level === 1 ? 'text-3xl' : 'text-2xl'
+            }`}>
+              {section.title}
+            </h2>
+            <div className="space-y-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              {section.content.map((line, idx) => {
+                const trimmed = line.trim();
+                
+                // Simple bullet point detection
+                if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+                  return (
+                    <li key={idx} className="ml-4 list-disc pl-2">
+                      {trimmed.substring(2)}
+                    </li>
+                  );
+                }
+                
+                // Empty line
+                if (trimmed === '') {
+                  return <div key={idx} className="h-4" />;
+                }
+                
+                return <p key={idx}>{line}</p>;
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
+    </article>
   );
 }

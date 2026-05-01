@@ -1,0 +1,1158 @@
+Winspiration Privacy Policy
+===========================
+
+Last updated: May 1, 2026
+Effective date: May 1, 2026
+
+This Privacy Policy explains how Winspiration collects, uses, stores,
+shares, discloses, protects, and otherwise processes personal data when you
+use Winspiration, including the mobile app, desktop app, web experience,
+website, account features, support channels, and related services where
+available (collectively, "Winspiration", the "App", or the "Service").
+
+Winspiration is a digital ritual app built around a daily inspirational
+experience, phrase of the day, number combination, diary snapshots, focus
+sessions, personal progress, optional AI generation, credits, subscriptions,
+ads, notifications, analytics, account restore, sync, backup, and related
+features.
+
+This Policy is intentionally broad enough to cover the App as it exists today
+and realistic future features. Some features described below may not be
+available in every release, country, platform, account tier, device, or store.
+Where a feature is not enabled, the related processing may not occur. Where
+law requires consent, permission, or a separate notice, Winspiration will rely
+on that consent, permission, or notice before enabling the relevant processing.
+
+This document is designed to work together with in-app consent screens,
+just-in-time notices, store privacy labels, platform permission prompts, AI
+disclosures, Data Safety disclosures, App Privacy details, and any additional
+country-specific notices that may be provided.
+
+1. Controller and Privacy Contact
+---------------------------------
+
+For the purposes of the GDPR, UK GDPR, LGPD, and similar privacy laws, the
+controller of personal data processed through Winspiration is:
+
+Pietro Guglielmi
+Viale Venezia Giulia, 6
+Andria, BT, 76123
+Italy
+
+Email: pietrog.developer@gmail.com
+Website: https://www.pheptech.com
+Italian Tax Code: GGLPTR88L04A285H
+
+PhepTech is the project and brand website associated with the controller for
+Winspiration. Privacy questions, account deletion requests, access requests,
+consent withdrawal, complaints, and other privacy requests should be sent to:
+
+pietrog.developer@gmail.com
+
+No formal Data Protection Officer is identified in this Policy. If a DPO,
+representative, or local privacy contact becomes legally required for a
+specific jurisdiction or service configuration, the relevant information will
+be provided through this Policy, the App, the website, or another appropriate
+notice.
+
+2. Scope of This Policy
+-----------------------
+
+This Policy applies to personal data processed in connection with:
+
+- the Winspiration App on Android, iOS, desktop, web, and other supported
+  platforms;
+- guest mode, local-first use, and offline-capable features;
+- account mode, sign-in, account linking, restore, sync, and backup;
+- diary snapshots, focus sessions, progress, streaks, preferences, and
+  consent state;
+- AI generation, AI credits, prompt orchestration, validation, and fallback
+  behavior;
+- subscriptions, purchases, credits, refunds, entitlements, and billing
+  restore;
+- analytics, diagnostics, crash reporting, app integrity, fraud prevention,
+  and security monitoring;
+- push notifications, email, support, service messages, and marketing where
+  allowed;
+- advertising, ad measurement, ad frequency controls, and ad personalization
+  where enabled and lawful;
+- the PhepTech website or pages used to publish legal documents, support
+  contacts, app links, or product information.
+
+This Policy does not govern third-party services that operate independently
+under their own terms and privacy policies, such as app stores, payment
+processors, identity providers, AI providers, advertising networks, analytics
+providers, cloud providers, or external websites. It does describe how those
+providers may be used in connection with Winspiration.
+
+3. High-Level Privacy Commitments
+---------------------------------
+
+Winspiration is designed around the following privacy commitments:
+
+- Guest-first: the core ritual should be useful without requiring an account,
+  where supported.
+- Device-first: the daily ritual, diary snapshots, focus reports, progress,
+  preferences, and guest state may live locally on your device.
+- Remote only where valuable: account, restore, credits, entitlements, sync,
+  cloud backup, and recovery may use remote services when they protect value
+  for the user or are necessary for paid features.
+- Consent-aware: analytics, ads personalization, push notifications, optional
+  permissions, marketing, and some AI or personalization features are gated by
+  consent or platform permission where required.
+- Diary minimization: diary text, personal notes, and private reflections are
+  not sent to analytics or advertising systems.
+- No ads in the core ritual: advertising is intended to stay outside the
+  reading, reveal, and completion core of the daily ritual.
+- Provider isolation: external SDKs and services are intended to be used
+  behind controlled technical boundaries rather than embedded in the product
+  domain model.
+- Security by design: sensitive local data, tokens, keys, and backups should
+  be protected through platform security controls and encryption where
+  available.
+- Privacy-safe fallback: if consent, provider availability, or legal status is
+  uncertain, the App should prefer the least invasive behavior that still
+  keeps the core ritual usable.
+
+4. Definitions
+--------------
+
+"Personal data" or "personal information" means information that identifies,
+relates to, describes, can reasonably be linked to, or could reasonably
+identify a natural person, depending on the applicable law.
+
+"Sensitive personal data" means information treated as sensitive by applicable
+law, such as precise location, government identifiers, account credentials,
+payment information, health-related information, biometric data, religious or
+political information, or sensitive diary content that you voluntarily enter.
+
+"Processing" means any operation performed on personal data, including
+collection, storage, use, disclosure, sharing, deletion, anonymization,
+analysis, transmission, or protection.
+
+"Controller" means the person or organization that decides why and how
+personal data is processed.
+
+"Processor" or "service provider" means a third party that processes personal
+data on behalf of the controller.
+
+"App stores" include Apple App Store, Google Play, Microsoft Store, and any
+equivalent platform or marketplace through which Winspiration may be
+distributed.
+
+"AI provider" means a provider used to generate, validate, filter, moderate,
+or route AI-powered output, such as Google Gemini, OpenAI, Anthropic Claude,
+JetBrains Koog-based orchestration, or an equivalent provider where enabled.
+
+5. Notice at Collection
+-----------------------
+
+This section summarizes the categories of personal data that Winspiration may
+collect, the main purposes, whether data may be shared for advertising or
+targeted advertising, and typical retention principles. The exact processing
+depends on your platform, settings, account status, consent, permissions, and
+the features you use.
+
+| Category | Examples | Main purposes | Sale/share/targeted ads | Retention principle |
+|---|---|---|---|---|
+| Identifiers | Email, account ID, user ID, installation ID, device ID, push token, transaction ID | Account, authentication, restore, sync, support, notifications, security | May be shared with service providers; advertising IDs may be shared for ads where enabled and lawful | Account lifetime or until no longer needed; technical IDs may rotate or expire |
+| Account data | Sign-in provider, account status, linked providers, restore state, preferences | Account management, guest-to-account linking, recovery, sync, entitlements | Not sold for money; may be shared with auth and backend providers | Account lifetime plus legal/security retention |
+| Guest and local app data | Local guest state, ritual state, preferences, consent state, local backup metadata | Offline use, device-first experience, recovery, settings | Not used for targeted ads unless converted to eligible consented analytics/ad events | Stored locally until deleted, reset, or uninstalled |
+| Diary and reflection content | Diary snapshots, notes, focus reports, emoji reports, personal reflections | Diary, focus, progress, backup, sync if enabled | Not used for advertising; not sent to analytics | Local until deleted; remote only if sync/backup enabled or user directs it |
+| Ritual and progress data | Day key, phrase read state, number reveal state, completion, streak, progress | Daily ritual, continuity, personalization, analytics where consented | Aggregated or event-level data may be used for analytics; not diary text | Local and/or account lifetime; analytics retained separately |
+| AI data | Prompt context, generation mode, AI output, safety flags, credit use, provider metadata | AI generation, validation, credits, safety, abuse prevention, fallback | Not used for ads unless separately disclosed and lawful; providers may process as described in their terms | As needed for generation, security, credits, logs, and provider retention |
+| Commercial data | Purchases, subscriptions, credit packs, refunds, renewals, restore, entitlements | Billing, subscription, credits, tax, accounting, fraud prevention | Shared with stores, billing, and entitlement providers; not sold for money | Kept as required for legal, tax, accounting, chargebacks, and disputes |
+| Usage and analytics data | App events, funnel events, feature usage, locale, app version, platform, session data | Product analytics, reliability, conversion, quality, operations | May be shared with analytics/ad partners where enabled and lawful | Provider-configured retention; minimized and aggregated where possible |
+| Diagnostics and crash data | Crash logs, stack traces, performance, error codes, device model, OS version | Debugging, quality, security, stability | Shared with crash/diagnostic providers; not used for ads | Limited operational retention |
+| Notification data | Push token, notification preferences, delivery/open events, timezone | Push notifications, reminders, service messages | Shared with push providers; not sold for money | Until disabled, token expires, or no longer needed |
+| Advertising data | Advertising ID, ad events, consent state, impression/click/frequency data | Ads, measurement, frequency capping, fraud prevention, personalization if allowed | May be shared for targeted advertising where consented or legally permitted | Provider-configured retention; opt-out honored where required |
+| Device and permission data | OS, device type, language, timezone, approximate IP location, optional camera/photos/files/microphone/calendar/location access | App operation, localization, reminders, attachments, exports, voice/photo features if enabled | Permission data is not sold for money; ad-related identifiers may be shared as above | As needed for feature operation or until permission/data is removed |
+| Support data | Email, messages, screenshots, files, request history | Support, troubleshooting, legal records, quality | Shared with support/email providers where needed | As needed for support, records, disputes, and compliance |
+| Security and integrity data | IP address, app integrity tokens, request hashes, fraud signals, rate limits, abuse logs | App integrity, anti-fraud, abuse prevention, endpoint protection | Shared with security, platform, and backend providers | Security retention appropriate to risk |
+
+6. Personal Data We May Process
+-------------------------------
+
+6.1 Account and Identity Data
+
+Where account features are available, Winspiration may process:
+
+- user ID, account ID, or internal profile identifier;
+- email address;
+- display name, profile name, or account alias if provided;
+- sign-in provider details, such as Apple, Google, Microsoft, Firebase,
+  Supabase, or another supported identity provider;
+- linked providers and account linking status;
+- sign-in, sign-out, restore, authentication error, and recovery status;
+- country, language, locale, region, app store territory, and timezone where
+  provided by the platform or reasonably inferred from settings;
+- account deletion, export, correction, or privacy request metadata.
+
+Account data is used to maintain ownership of purchases, credits, entitlements,
+sync, backup, and restore. The App should remain useful in guest mode where
+possible, but some features require an account because they have economic,
+sync, or recovery value.
+
+6.2 Guest Mode and Local Device Data
+
+If you use Winspiration without an account, the App may process data locally
+on your device, such as:
+
+- guest session state;
+- local installation identifier;
+- daily ritual state;
+- phrase read state;
+- number combination reveal state;
+- completion state;
+- diary snapshots and focus reports;
+- streak, progress, and continuity state;
+- preferences, settings, feature flags, and consent state;
+- local backup and recovery metadata;
+- local cache needed to keep the App usable offline.
+
+Guest data may remain only on your device unless you create or link an
+account, enable sync, request backup, contact support, use a feature requiring
+remote processing, or choose to export or share data.
+
+6.3 Diary, Focus, Reflection, and User-Generated Content
+
+Winspiration may allow you to create, save, edit, delete, export, restore, or
+sync personal content, including:
+
+- diary entries or diary snapshots;
+- focus session notes, focus reports, and emoji reports;
+- personal reflections and ritual notes;
+- records connected to a daily phrase, number combination, theme, day key, or
+  focus session;
+- future optional attachments such as images, audio, files, or media where
+  available and intentionally provided by you.
+
+This content can be personal and may become sensitive depending on what you
+write. You should not enter highly sensitive information unless you are
+comfortable storing it in the App and, if enabled, syncing or backing it up
+through the relevant provider.
+
+Winspiration does not intentionally send diary text or personal reflections to
+analytics or advertising providers. If future AI features allow you to submit
+diary content for analysis, rewriting, interpretation, or personalization,
+that processing should be preceded by clear in-app disclosure and, where
+required, consent.
+
+If future social, community, sharing, collaboration, public profile, referral,
+or invitation features are introduced, the App may process additional profile,
+sharing, contact, interaction, or public content data. Such features should be
+optional, clearly disclosed, and governed by privacy settings appropriate to
+the visibility of the content.
+
+6.4 Ritual, Progress, and Personalization Data
+
+To provide the App experience, Winspiration may process:
+
+- day keys, availability windows, dates, timestamps, timezone, and countdown
+  state;
+- daily phrase, number combination, generation mode, theme profile, and
+  completion state;
+- ritual flow events, such as phrase read, combination unlocked, ritual
+  completed, diary snapshot saved, and focus completed;
+- progress, streak, return, reminder, and continuity metrics;
+- display, language, accessibility, notification, ad, AI, and personalization
+  preferences.
+
+6.5 AI Generation and AI Credit Data
+
+Where AI features are available, Winspiration may process:
+
+- generation mode and user choices;
+- prompt context needed to generate an inspirational output;
+- AI prompt, request, response, validation result, and fallback status;
+- AI provider metadata, such as provider, model family, request time, latency,
+  token or usage information, error status, and safety status;
+- AI credit balance, credit spend, retry, refund, entitlement, quota, and
+  abuse-prevention state;
+- moderation, validation, quality, and safety signals;
+- logs needed to prevent fraud, quota abuse, prompt injection, or misuse.
+
+The App should minimize personal data sent to AI providers. Diary text and
+private notes should not be sent to AI providers unless a specific feature
+requires that input, you intentionally provide it, and required disclosure or
+consent is handled.
+
+Where provider settings allow, Winspiration should prefer configurations that
+do not use API inputs or outputs to train public AI models. Some AI providers
+may process data according to their own terms, retention, abuse-monitoring,
+and safety policies. You should review the applicable provider notice where
+provided.
+
+AI outputs are inspirational and creative. They are not medical,
+psychological, psychiatric, legal, financial, spiritual, safety, emergency, or
+professional advice.
+
+6.6 Purchases, Subscriptions, Credits, and Entitlements
+
+If you buy, restore, or manage paid features, Winspiration may process:
+
+- product ID, plan ID, offer ID, credit bundle ID, and entitlement status;
+- purchase, renewal, cancellation, refund, chargeback, restore, failure, and
+  expiration events;
+- app store receipt metadata, transaction identifiers, subscriber identifiers,
+  and platform store region where available;
+- RevenueCat or equivalent entitlement metadata;
+- Microsoft Store, Apple App Store, Google Play, Stripe, PayPal, or equivalent
+  payment-provider records where enabled;
+- credit balance, credit purchase, credit spend, AI usage, and wallet state;
+- fraud prevention, restore reconciliation, account-linking, and support data.
+
+Winspiration generally does not directly receive full payment card numbers
+when purchases are processed through an app store or payment provider. Those
+providers process payment information under their own policies and legal
+obligations.
+
+6.7 Analytics, Diagnostics, and Crash Data
+
+Where enabled and lawful, Winspiration may process analytics and diagnostics
+data such as:
+
+- app opened, guest session started, login prompt shown, login completed,
+  account linked, ritual availability checked, ritual loaded, phrase read,
+  combination unlocked, ritual completed, diary snapshot saved, focus started,
+  focus completed, emoji report submitted, streak updated, generation mode
+  selected, AI credits spent, paywall shown, paywall converted, subscription
+  purchased, credits purchased, restore used, ads shown, ad failures, reminder
+  opened, next-day return, and similar events;
+- app version, build number, operating system, platform, device model,
+  language, locale, timezone, screen area, and feature area;
+- performance metrics, load time, latency, network state, crash reports,
+  stack traces, error codes, and failure reasons.
+
+Analytics and crash reporting must not include diary text, personal
+reflections, raw private content, authentication tokens, API keys, payment
+card numbers, or unnecessary sensitive payloads.
+
+6.8 Notifications and Communications Data
+
+If notifications or communications are enabled, Winspiration may process:
+
+- push token or device notification identifier;
+- notification permission state;
+- notification preferences and reminder settings;
+- timezone, schedule, delivery state, open event, and notification category;
+- email address, support messages, transactional messages, marketing consent,
+  and communication preferences.
+
+Notifications may include daily ritual availability, pre-reminders,
+completion reminders, focus reminders, streak-at-risk reminders, login
+reminders when contextually useful for sync/restore/credits, service notices,
+security notices, product updates, and marketing where allowed.
+
+6.9 Advertising and Marketing Data
+
+Where ads or marketing features are enabled, Winspiration may process:
+
+- ad consent state and privacy preferences;
+- advertising ID or app instance ID where permitted by the platform and your
+  settings;
+- ad placement, impression, click, reward, failure, frequency, suppression,
+  and measurement events;
+- approximate location, IP-derived region, device type, app version, and
+  usage data for ad delivery, measurement, frequency capping, fraud
+  prevention, and personalization where lawful;
+- campaign source, attribution, referral, email marketing status, and
+  unsubscribe state.
+
+Personalized ads are used only where lawful and, where required, after consent.
+Users may opt out through in-app controls where available, device settings,
+store/platform settings, consent prompts, or by contacting us.
+
+6.10 Device Permissions
+
+The core daily ritual does not require broad device permissions. Depending on
+current or future features, the App may request permission for:
+
+- notifications, to send reminders and service alerts;
+- camera or photos, for profile images, visual diary features, attachments, or
+  sharing where available;
+- microphone or audio, for voice notes, focus audio, or voice-based AI
+  features where available;
+- files or media, for exports, imports, attachments, or backup;
+- location, usually only for timezone, reminders, localization, or
+  location-based features if introduced;
+- calendar or reminders, for optional scheduling features;
+- contacts, only if a future invitation, sharing, or collaboration feature
+  requires it and you allow it.
+
+You can usually revoke these permissions through your device settings. Some
+features may stop working if the related permission is disabled.
+
+6.11 Sensitive Personal Data
+
+Winspiration is not designed to request sensitive data as a primary feature.
+However, sensitive data may be processed if:
+
+- you voluntarily write sensitive information in diary, focus, or reflection
+  content;
+- you use account, security, payment, or authentication flows;
+- platform providers process payment, subscription, or identity data;
+- optional permissions such as precise location, photos, audio, or files are
+  enabled;
+- a legal request, support case, or safety/security incident involves
+  sensitive information.
+
+Sensitive data is processed only as needed to provide the requested feature,
+protect the Service, comply with law, or with consent where required. Sensitive
+diary content is not used for advertising.
+
+7. Sources of Personal Data
+---------------------------
+
+Winspiration may collect personal data from:
+
+- you, when you use the App, create content, create or link an account, make a
+  purchase, contact support, change settings, or provide consent;
+- your device, operating system, browser, app store, or platform;
+- authentication providers;
+- app stores, payment processors, subscription managers, and entitlement
+  providers;
+- analytics, crash reporting, advertising, notification, AI, cloud, backend,
+  security, and support providers;
+- app integrity and fraud prevention services;
+- business partners or service providers where lawful and relevant;
+- public sources only where lawful and necessary for support, enforcement, or
+  business operations.
+
+8. Purposes and Legal Bases
+---------------------------
+
+Where GDPR, UK GDPR, LGPD, or similar laws apply, Winspiration relies on one
+or more legal bases depending on the processing.
+
+| Purpose | Examples | Typical legal bases |
+|---|---|---|
+| Provide the App | Daily ritual, diary, focus, progress, preferences, local storage | Contract, legitimate interests, consent where required |
+| Guest mode | Local guest state, offline use, preferences | Contract, legitimate interests |
+| Account and authentication | Sign-in, account linking, account recovery, identity state | Contract, legitimate interests, consent where required |
+| Sync, backup, restore | Remote backup, multi-device continuity, restore purchases, recovery | Contract, legitimate interests, consent where required |
+| Billing and credits | Subscriptions, purchases, credits, refunds, entitlements | Contract, legal obligation, legitimate interests |
+| AI generation | Prompt processing, AI output, validation, credits, fallback | Contract, consent where required, legitimate interests |
+| Analytics | Product events, funnel metrics, aggregate usage, conversion | Consent where required, legitimate interests where lawful |
+| Crash and diagnostics | Stability, bugs, error logs, performance | Legitimate interests, consent where required |
+| Notifications | Push reminders, service alerts, security messages | Consent or platform permission, contract, legitimate interests |
+| Advertising | Ads, measurement, frequency capping, fraud prevention, personalization | Consent where required, legitimate interests for non-personalized/fraud uses where lawful |
+| Marketing | Email or promotional messages | Consent where required, legitimate interests where lawful, contract for service notices |
+| Security and integrity | App Check, Play Integrity, abuse detection, rate limits, anti-fraud | Legitimate interests, legal obligation |
+| Support | Responding to messages, troubleshooting, account help | Contract, legitimate interests, legal obligation |
+| Compliance and legal claims | Tax, accounting, authorities, disputes, enforcement | Legal obligation, legitimate interests |
+
+If processing is based on consent, you may withdraw consent at any time.
+Withdrawal does not affect processing that occurred lawfully before withdrawal.
+
+9. Local Storage, Device-First Design, Sync, and Backup
+-------------------------------------------------------
+
+Winspiration is designed to work locally where possible. Local data may include
+ritual state, diary snapshots, focus reports, preferences, progress, streaks,
+guest state, consent state, cache, and backup metadata.
+
+Local storage may use technologies such as Room Multiplatform, SQLite,
+SQLCipher or equivalent encryption, operating system storage, secure
+preferences, files, or platform-specific storage.
+
+Where available, sensitive local data and backups should be protected by:
+
+- database encryption or platform encryption;
+- Android Keystore, iOS Keychain, macOS Keychain, Windows Credential Manager,
+  Linux secure storage where available, or equivalent mechanisms;
+- encrypted backup exports;
+- Write-Ahead Logging or equivalent recovery safeguards;
+- local deletion, reset, export, and recovery flows where available.
+
+Remote sync and cloud backup may be used only for selected data where there is
+clear value, such as:
+
+- account state;
+- entitlements;
+- credits and wallet state;
+- restore and purchase reconciliation;
+- diary and progress backup;
+- sync between devices;
+- recovery after device loss or database corruption.
+
+Temporary cache, cosmetic state, and data not needed for ownership or recovery
+may remain local and may not be synced.
+
+10. AI Features
+---------------
+
+Winspiration may provide AI-assisted generation for inspirational content,
+number-related content, interpretation, personalization, focus support, diary
+assistance, language adaptation, summaries, or future AI-enabled features.
+
+AI features may be powered by an AI provider directly or through a backend
+gateway. Providers may include Google Gemini, OpenAI, Anthropic Claude,
+JetBrains Koog-based orchestration, or equivalent providers. The provider may
+vary by platform, country, cost, availability, and release.
+
+AI processing may involve:
+
+- sending prompt context and generation parameters to an AI provider;
+- receiving and validating AI output;
+- filtering unsafe, irrelevant, too long, or malformed output;
+- falling back to random or numerology-based generation when AI fails;
+- deducting credits, enforcing quotas, and preventing abuse;
+- keeping limited technical logs for reliability, security, billing, or
+  dispute handling.
+
+Winspiration does not use AI to make decisions that have legal or similarly
+significant effects about you. AI may influence generated content and
+personalized app experiences, but it should not determine eligibility for
+legal rights, employment, credit, health treatment, or other high-impact
+decisions.
+
+You should not submit sensitive personal information to AI features unless the
+feature clearly asks for it and you are comfortable with that processing.
+
+11. Purchases, Subscriptions, Credits, and Store Providers
+---------------------------------------------------------
+
+Winspiration may offer:
+
+- free features supported by ads;
+- premium subscriptions or paid tiers;
+- ad removal or ad reduction;
+- AI credit packs;
+- one-time purchases;
+- restore purchases;
+- platform-specific or cross-platform entitlements;
+- future bundles, trials, promotions, or pricing experiments.
+
+Purchases may be processed by Apple App Store, Google Play, Microsoft Store,
+RevenueCat, Stripe, PayPal, or equivalent providers. These providers may
+collect and process payment, tax, fraud, refund, account, and transaction data
+under their own policies.
+
+Winspiration may receive transaction metadata, receipt data, subscriber
+identifiers, product identifiers, entitlement status, restore results, refund
+status, and credit events. This data is used to deliver purchases, maintain
+credits, prevent fraud, support refunds or disputes, and comply with law.
+
+Deleting the App or deleting your Winspiration account may not automatically
+cancel a platform subscription. You may need to cancel subscriptions through
+the relevant app store or payment provider.
+
+12. Analytics, Diagnostics, and Crash Reporting
+-----------------------------------------------
+
+Winspiration may use analytics and diagnostics providers such as Firebase
+Analytics, Google Analytics, Crashlytics, Sentry, PostHog, Matomo, Microsoft
+App Center or successor services, or equivalent providers.
+
+Analytics should be limited to event names and metadata needed to understand
+the product, such as ritual completion, feature use, conversion, stability,
+and retention. Crash reporting should be limited to technical error
+information needed to fix defects and maintain reliability.
+
+Analytics and diagnostics are not essential to the core ritual and should not
+block core App use if unavailable. Where required, analytics are disabled
+until you consent. You can manage analytics preferences through App settings
+where available, consent prompts, device settings, or by contacting us.
+
+13. Advertising and Ad Personalization
+--------------------------------------
+
+Winspiration may use advertising providers such as Google AdMob, Google User
+Messaging Platform, Apple advertising frameworks, Microsoft Advertising,
+mediation networks, or equivalent services.
+
+Ads may be contextual, non-personalized, personalized, rewarded, app-open,
+interstitial, native-like, banner, or another lawful format. Product policy is
+to avoid ads during the core ritual reading, number reveal, and immediate
+completion moment.
+
+Advertising may involve:
+
+- showing ads in free or ad-supported areas;
+- measuring ad impressions and performance;
+- limiting ad frequency;
+- preventing ad fraud;
+- honoring premium ad suppression;
+- personalizing ads where allowed and consented;
+- sharing advertising identifiers, app instance identifiers, approximate
+  region, device data, and event data with ad partners where lawful.
+
+Personalized ads, cross-context behavioral advertising, and sale/share under
+US state laws are subject to opt-out and consent rules. See the US privacy
+sections below.
+
+14. Notifications, Email, and Communications
+--------------------------------------------
+
+Winspiration may send:
+
+- daily ritual availability reminders;
+- pre-reminders;
+- completion reminders;
+- focus reminders;
+- streak-at-risk reminders;
+- login or account reminders when useful for restore, sync, or credits;
+- service notices;
+- security notices;
+- purchase, subscription, and credit notices;
+- policy update notices;
+- support replies;
+- marketing messages where allowed.
+
+Push notifications require platform permission where required. You can disable
+push notifications in your device settings or App settings where available.
+
+Marketing communications are sent only where lawful. You can unsubscribe or
+opt out through the provided mechanism or by contacting
+pietrog.developer@gmail.com.
+
+15. Cookies, SDKs, Identifiers, and Similar Technologies
+--------------------------------------------------------
+
+Winspiration, the website, and related services may use:
+
+- cookies;
+- local storage;
+- SDKs;
+- app instance identifiers;
+- installation IDs;
+- advertising IDs;
+- analytics identifiers;
+- push tokens;
+- device integrity tokens;
+- session identifiers;
+- cache and preference storage.
+
+These technologies may support authentication, preferences, consent
+management, analytics, crash reporting, advertising, billing, restore,
+security, app integrity, fraud prevention, notifications, support, and
+operations.
+
+Where required, non-essential cookies, identifiers, or SDK processing are
+subject to consent or opt-out. Browser and device controls may allow you to
+delete, reset, or limit certain identifiers.
+
+15.1 Do Not Track, Global Privacy Control, and Platform Signals
+
+Some browsers, devices, and platforms provide privacy controls such as Do Not
+Track, Global Privacy Control, advertising ID reset, limit ad tracking,
+App Tracking Transparency, consent management prompts, notification
+permissions, and app permission controls.
+
+Where required by applicable law and technically feasible, Winspiration honors
+recognized opt-out, consent, and platform privacy signals. Some signals apply
+only to web use, only to a specific browser or device, only to advertising, or
+only to processing that the App can technically control. If signals conflict,
+the App should prefer the more privacy-protective setting where feasible.
+
+16. Third-Party Providers
+-------------------------
+
+Depending on platform, country, release, and feature availability,
+Winspiration may use the following categories of providers:
+
+- app stores and platforms: Apple, Google, Microsoft, and equivalent
+  providers;
+- authentication: Apple Sign In, Google Sign-In, Microsoft account, Firebase
+  Authentication, Supabase Auth, or equivalent providers;
+- backend and cloud: Firebase, Google Cloud, Supabase, Cloudflare, AWS,
+  Azure, or equivalent providers;
+- database and sync: Cloud Firestore, Supabase/Postgres, SQLite-backed sync
+  services, or equivalent services;
+- serverless functions: Firebase Cloud Functions, Supabase Edge Functions,
+  Cloudflare Workers, or equivalent services;
+- billing and entitlement: Apple App Store, Google Play Billing, Microsoft
+  Store, RevenueCat, Stripe, PayPal, or equivalent providers;
+- analytics and crash: Firebase Analytics, Google Analytics, Crashlytics,
+  Sentry, PostHog, Matomo, Microsoft App Center or successor services, or
+  equivalent providers;
+- advertising: Google AdMob, Google UMP, mediation networks, and equivalent
+  ad providers;
+- notifications: Firebase Cloud Messaging, Apple Push Notification service,
+  Microsoft push services, email providers, or equivalent providers;
+- AI: Google Gemini, OpenAI, Anthropic Claude, JetBrains Koog-based
+  orchestration, or equivalent providers;
+- security and integrity: Play Integrity, Firebase App Check, Apple App
+  Attest, DeviceCheck, Microsoft Store validation, fraud prevention, abuse
+  detection, rate limiting, or equivalent services;
+- support and communications: email hosting, help desk, CRM, transactional
+  email, and customer support tools;
+- hosting and operations: CDN, hosting, monitoring, logging, error tracking,
+  backup, and incident response providers;
+- professional advisers: legal, accounting, auditing, tax, security, and
+  insurance advisers.
+
+The exact provider list may change over time. Winspiration should keep store
+disclosures, in-app notices, SDK configuration, and this Policy aligned with
+the providers actually used in production.
+
+17. How We Share Personal Data
+------------------------------
+
+We may share personal data:
+
+- with processors and service providers that operate the App on our behalf;
+- with app stores, payment processors, subscription managers, and entitlement
+  providers;
+- with identity providers for sign-in and account linking;
+- with cloud, backend, sync, backup, AI, analytics, crash, advertising,
+  notification, security, and support providers;
+- with professional advisers;
+- with authorities, courts, regulators, or law enforcement when required by
+  law or valid legal process;
+- with a buyer, successor, investor, or adviser in connection with a merger,
+  acquisition, financing, restructuring, asset sale, or similar transaction;
+- with another party at your direction or with your consent.
+
+We do not sell personal data for money. We do not knowingly sell or share the
+personal data of users we know are under 16 years old.
+
+Some advertising, analytics, or measurement disclosures may be considered
+"sharing", "targeted advertising", or in some jurisdictions a "sale" even if
+no money is exchanged. You can opt out where applicable.
+
+18. International Transfers
+---------------------------
+
+The controller is based in Italy. Personal data may be processed in Italy, the
+European Economic Area, the United Kingdom, Switzerland, the United States,
+Brazil, Canada, Australia, and other countries where we or our providers
+operate.
+
+When personal data is transferred internationally, we use safeguards required
+or recognized by applicable law where available, such as:
+
+- adequacy decisions;
+- Standard Contractual Clauses;
+- UK International Data Transfer Addendum or equivalent UK safeguards;
+- Data Privacy Framework certification where relevant and valid;
+- contractual processor obligations;
+- transfer impact assessments where required;
+- encryption, access restrictions, minimization, and monitoring;
+- provider due diligence and security controls.
+
+Laws in other countries may differ from those in your country.
+
+19. Data Retention
+------------------
+
+Winspiration keeps personal data only for as long as reasonably necessary for
+the purposes described in this Policy, unless a longer retention period is
+required or permitted by law.
+
+| Data type | Typical retention approach |
+|---|---|
+| Local ritual, diary, focus, progress, and guest data | Stored on your device until you delete it, reset the App, uninstall the App, clear local storage, or use an in-app deletion feature |
+| Account data | Kept while the account exists and for a reasonable period after closure for security, legal, backup, dispute, or audit reasons |
+| Sync and backup data | Kept while sync/backup is enabled or needed for restore; may remain in backups for a limited backup lifecycle |
+| Purchases, subscriptions, credits, refunds, and tax records | Kept as needed for legal, accounting, tax, chargeback, fraud prevention, dispute, and store compliance obligations |
+| AI requests and outputs | Kept only as needed for generation, safety, abuse prevention, billing, credit reconciliation, debugging, and provider retention, subject to provider terms |
+| Analytics | Retained according to provider settings; minimized, aggregated, or deleted when no longer needed |
+| Crash and diagnostics | Kept for limited operational periods needed to fix bugs, improve stability, and protect security |
+| Advertising data | Retained according to provider settings, consent state, fraud prevention needs, and legal requirements |
+| Notification data | Kept until disabled, token expires, account is deleted, or the data is no longer needed |
+| Support messages | Kept as needed to respond, maintain records, handle disputes, and improve support |
+| Security and integrity logs | Kept according to risk, abuse prevention, fraud, and legal needs |
+| Legal request and compliance records | Kept as required to comply with law and defend rights |
+
+Deletion requests are honored subject to legal, tax, accounting, security,
+fraud prevention, backup, dispute, and technical limitations. If data has been
+anonymized so that it can no longer identify you, it may be retained and used.
+
+20. Security
+------------
+
+We use reasonable technical and organizational safeguards appropriate to the
+nature of the data and the risk. These may include:
+
+- HTTPS/TLS for data in transit;
+- database encryption or platform storage encryption where supported;
+- secure storage for keys, tokens, and secrets;
+- Android Keystore, iOS Keychain, macOS Keychain, Windows Credential Manager,
+  or equivalent secure storage;
+- encrypted backups for sensitive local recovery data where available;
+- access controls and least privilege;
+- provider isolation through ports, adapters, and backend validation;
+- Play Integrity, Firebase App Check, Apple App Attest, DeviceCheck, Microsoft
+  Store validation, or equivalent controls where available;
+- rate limits, replay protection, request hashing, and fraud detection for
+  sensitive endpoints;
+- minimization and redaction of logs;
+- exclusion of diary text from telemetry payloads;
+- monitoring, testing, incident response, and recovery procedures.
+
+No transmission or storage system is completely secure. You are responsible
+for protecting your device, operating system account, app store account, email
+account, authentication provider account, and device passcode.
+
+21. Your Privacy Choices
+------------------------
+
+Depending on your platform and the features available, you may be able to:
+
+- continue in guest mode;
+- create, link, or delete an account;
+- export or delete local data;
+- delete diary or focus entries;
+- disable analytics;
+- disable personalized ads;
+- limit ad tracking through device settings;
+- withdraw consent;
+- disable push notifications;
+- change reminder preferences;
+- revoke camera, photos, microphone, files, location, calendar, or contacts
+  permissions;
+- restore purchases;
+- cancel subscriptions through the relevant store;
+- request access, correction, portability, deletion, or restriction.
+
+Some controls may be in the App, some in your device settings, some in your
+app store account, and some available only by contacting us.
+
+22. Your Privacy Rights
+-----------------------
+
+Depending on your location and applicable law, you may have the right to:
+
+- know whether we process your personal data;
+- access personal data we hold about you;
+- receive a copy of your data;
+- correct inaccurate or incomplete data;
+- delete personal data;
+- restrict processing;
+- object to processing;
+- withdraw consent;
+- receive data portability;
+- opt out of marketing;
+- opt out of sale, sharing, targeted advertising, or profiling where
+  applicable;
+- limit certain uses of sensitive personal information where applicable;
+- appeal a denied request where applicable;
+- lodge a complaint with a data protection authority or regulator.
+
+To exercise rights, contact:
+
+pietrog.developer@gmail.com
+
+We may need to verify your identity before responding. If you use an account,
+we may verify your request through the email address or sign-in provider linked
+to that account. We respond within the time required by applicable law.
+
+23. EEA, UK, and Swiss Users
+----------------------------
+
+If you are in the European Economic Area, United Kingdom, or Switzerland, you
+may have GDPR, UK GDPR, or similar rights, including:
+
+- right to be informed;
+- right of access;
+- right to rectification;
+- right to erasure;
+- right to restriction of processing;
+- right to data portability;
+- right to object;
+- rights relating to automated decision-making and profiling;
+- right to withdraw consent;
+- right to lodge a complaint with a supervisory authority.
+
+We generally respond to GDPR requests without undue delay and within one
+month, unless an extension is permitted by law.
+
+For Italy, you may contact the Garante per la protezione dei dati personali:
+https://www.garanteprivacy.it
+
+For the UK, you may contact the Information Commissioner's Office:
+https://ico.org.uk
+
+We encourage you to contact us first so we can try to resolve your request.
+
+24. California and US State Privacy Rights
+------------------------------------------
+
+This section supplements the Policy for residents of California and other US
+states with comprehensive privacy laws. Applicability may depend on statutory
+thresholds, business size, revenue, number of users, data practices, and other
+legal criteria. Where a law applies, we honor the rights required by that law.
+
+24.1 Categories Collected
+
+In the preceding 12 months, depending on your use of the App, we may have
+collected the following categories:
+
+- identifiers;
+- customer records;
+- protected classification information only if you provide it or it is
+  inferred from region/language settings in a legally relevant way;
+- commercial information;
+- internet or electronic network activity;
+- geolocation data, usually approximate unless precise location is enabled;
+- audio, visual, or similar information if future features allow you to
+  provide it;
+- inferences drawn from preferences, usage, account state, and feature use;
+- sensitive personal information, such as account credentials handled by
+  providers, precise location where enabled, payment-related information
+  handled by payment providers, and sensitive diary content voluntarily
+  entered by you.
+
+24.2 Purposes
+
+We use these categories for the purposes described in this Policy, including
+providing the App, account, sync, backup, restore, purchases, credits,
+analytics, diagnostics, notifications, ads, AI features, support, security,
+fraud prevention, legal compliance, and product improvement.
+
+24.3 Sale, Sharing, and Targeted Advertising
+
+We do not sell personal information for money. If personalized ads,
+cross-context behavioral advertising, ad measurement, analytics, or similar
+technologies are enabled, some disclosures may be considered "sharing",
+"targeted advertising", or a "sale" under certain US state privacy laws.
+
+You may opt out through App settings where available, consent prompts, device
+settings, Global Privacy Control where applicable and technically feasible, or
+by contacting:
+
+pietrog.developer@gmail.com
+
+24.4 Sensitive Personal Information
+
+We use sensitive personal information only as reasonably necessary to provide
+the Service, maintain security, process payments through providers, manage
+accounts, comply with law, prevent fraud, or with your consent where required.
+We do not use sensitive diary content to infer characteristics for
+advertising.
+
+24.5 Consumer Rights
+
+Where applicable, you may have rights to know/access, delete, correct,
+portability, opt out of sale or sharing, opt out of targeted advertising, opt
+out of certain profiling, limit use of sensitive personal information, not be
+discriminated against for exercising rights, and appeal a denied request.
+
+24.6 Authorized Agents
+
+Where allowed by law, you may use an authorized agent. We may require proof of
+authorization and may still need to verify your identity.
+
+24.7 Financial Incentives
+
+Winspiration may offer subscriptions, credits, discounts, trials, promotions,
+or premium features. These are generally tied to payment, product use, or
+promotional eligibility, not to selling your personal data. If a future
+program qualifies as a financial incentive or loyalty program under applicable
+privacy law, we will provide the required notice and obtain any required
+consent.
+
+25. Brazil
+----------
+
+If you are in Brazil, the LGPD may give you rights to:
+
+- confirm whether processing exists;
+- access personal data;
+- correct incomplete, inaccurate, or outdated data;
+- anonymize, block, or delete unnecessary, excessive, or unlawfully processed
+  data;
+- data portability where regulated and technically feasible;
+- information about sharing;
+- information about the possibility of not providing consent and the
+  consequences;
+- withdraw consent;
+- request review of decisions made solely by automated processing where
+  applicable;
+- petition the ANPD.
+
+Requests may be sent to pietrog.developer@gmail.com.
+
+26. Canada
+----------
+
+If you are in Canada, PIPEDA or substantially similar provincial laws may give
+you rights to meaningful consent, access, correction, accountability,
+openness, safeguards, and the ability to challenge compliance. You may request
+access to personal information and correction of inaccurate or incomplete
+information by contacting pietrog.developer@gmail.com.
+
+27. Australia and New Zealand
+-----------------------------
+
+If you are in Australia or New Zealand, applicable privacy laws may give you
+rights to access and correct personal information and to complain about
+privacy handling. We will respond to requests in accordance with applicable
+law.
+
+28. Other International Rights
+------------------------------
+
+If you are in a jurisdiction with privacy laws such as Japan, South Korea,
+India, Singapore, South Africa, or another country, you may have additional
+rights depending on local law. We will consider and respond to requests in
+accordance with applicable legal obligations.
+
+29. Children and Minors
+-----------------------
+
+Winspiration is intended for users aged 16 and older. It is not directed to
+children and is not designed, marketed, or operated as a child-directed app.
+Winspiration is not intended to knowingly collect personal data from children
+under 13 in the United States, from users under 16 in the EEA/UK where the
+applicable digital consent age is 16, or from users under the applicable
+digital consent age in other regions without required parental or legal
+guardian consent.
+
+If you are under 16, or under the age required by your country to consent to
+digital services, you should use Winspiration only with the involvement,
+permission, and supervision of a parent or legal guardian.
+
+Where required or appropriate, Winspiration may:
+
+- restrict account, AI, personalization, ads, social, or sharing features for
+  minors;
+- request age-related information or parental consent;
+- disable personalized ads for users known to be minors;
+- delete personal data if we learn it was collected from a child without
+  required consent;
+- respond to parent or guardian requests for access, correction, deletion, or
+  consent withdrawal.
+
+Parents or guardians may contact:
+
+pietrog.developer@gmail.com
+
+We do not knowingly sell or share personal information of users we know are
+under 16 years old.
+
+30. Automated Decision-Making and Profiling
+-------------------------------------------
+
+Winspiration may use automated processing to:
+
+- generate AI content;
+- select fallback generation modes;
+- validate AI outputs;
+- apply credit and entitlement rules;
+- schedule or suppress reminders;
+- personalize non-sensitive app experience;
+- measure analytics events;
+- detect fraud, abuse, tampering, replay, or suspicious requests;
+- decide whether an endpoint requires integrity evidence or rate limiting.
+
+Winspiration does not intend to use solely automated processing to make
+decisions that produce legal or similarly significant effects about you. Where
+applicable law gives you rights related to automated decision-making,
+profiling, or ADMT, you may contact us to exercise those rights.
+
+31. App Store, Google Play, Microsoft Store, and SDK Disclosures
+---------------------------------------------------------------
+
+Winspiration's public store disclosures should accurately match this Policy
+and the App's real behavior.
+
+For Apple platforms, App Privacy details and privacy manifests should reflect
+data collected by the App and third-party SDKs, including required reason APIs
+where applicable.
+
+For Google Play, the Data Safety section, target audience settings, account
+deletion disclosures, ads declarations, and any child-safety or age-related
+declarations should reflect data collection, sharing, security practices,
+deletion options, and third-party SDK behavior across distributed versions of
+the App.
+
+For Microsoft Store and desktop distribution, privacy policy disclosures
+should reflect whether the App accesses, collects, or transmits personal data.
+
+This Policy is intentionally broad enough to cover current and realistic
+future Winspiration features. Store disclosures, privacy labels, Data Safety
+answers, permission declarations, and SDK manifests should not be completed on
+the basis of broad future possibilities alone; they should match the specific
+release, platform, country, SDK configuration, and feature set that is actually
+distributed.
+
+Before public release or any material SDK change, the App's store disclosures,
+SDK list, consent flows, in-app notices, age settings, and this Policy should
+be reviewed together.
+
+31.1 Production Alignment Requirement
+
+The App's real runtime behavior must match its public disclosures. Before a
+store release, release candidate, or material provider change, the following
+items should be reviewed together:
+
+- this Privacy Policy;
+- Apple App Privacy details and privacy manifests;
+- Google Play Data Safety answers;
+- Microsoft Store or desktop privacy disclosures;
+- in-app consent screens and just-in-time notices;
+- SDK inventory and third-party provider configuration;
+- analytics, ads, AI, billing, notification, crash, and integrity settings;
+- account deletion, export, opt-out, and consent withdrawal flows.
+
+If a provider or SDK is removed, disabled, replaced, or added, the public
+privacy disclosures should be updated before or at the same time as the
+release that changes data processing.
+
+32. Account Deletion, Local Deletion, Export, and Subscription Cancellation
+--------------------------------------------------------------------------
+
+Where available, Winspiration may provide in-app tools to delete account data,
+delete local data, export data, reset guest state, delete diary entries, or
+manage sync.
+
+You may also request deletion by contacting:
+
+pietrog.developer@gmail.com
+
+Deleting the App may remove local data from your device depending on your
+platform and backup settings. It may not delete cloud data, account data,
+support records, subscription records, payment provider records, store records,
+tax records, security logs, or backups that are retained for lawful reasons.
+
+Deleting your Winspiration account does not automatically cancel subscriptions
+managed by Apple, Google, Microsoft, RevenueCat-supported flows, Stripe,
+PayPal, or another payment provider. You may need to cancel the subscription
+through the relevant store or provider.
+
+33. Legal Requests, Safety, and Enforcement
+-------------------------------------------
+
+We may preserve or disclose personal data when we believe it is reasonably
+necessary to:
+
+- comply with law, regulation, legal process, or governmental request;
+- enforce terms, policies, and rights;
+- protect users, the public, the App, and the controller;
+- investigate fraud, abuse, security incidents, or technical issues;
+- prevent harm or illegal activity;
+- establish, exercise, or defend legal claims.
+
+34. Third-Party Links and External Services
+-------------------------------------------
+
+The App or website may link to third-party websites, app stores, payment
+providers, AI providers, social pages, help pages, or other external services.
+Those services are controlled by third parties and may have their own privacy
+policies and terms. You should review them before using those services.
+
+35. Changes to This Policy
+--------------------------
+
+We may update this Policy from time to time. When we make material changes,
+we will update the "Last updated" date and provide notice where required,
+such as through the App, website, store listing, email, or another reasonable
+method.
+
+If a change requires consent, we will request consent where required. Your
+continued use of Winspiration after an updated Policy becomes effective means
+the updated Policy applies, subject to your legal rights and consent choices.
+
+36. Contact Us
+--------------
+
+For privacy questions, requests, complaints, or notices:
+
+Pietro Guglielmi
+Email: pietrog.developer@gmail.com
+Website: https://www.pheptech.com
+Address: Viale Venezia Giulia, 6, Andria, BT, 76123, Italy
+Italian Tax Code: GGLPTR88L04A285H

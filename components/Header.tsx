@@ -31,29 +31,40 @@
  * Il presente avviso di copyright sarà regolato e interpretato in conformità con le leggi vigenti. Qualsiasi controversia derivante da o relativa al presente avviso di copyright sarà soggetta alla giurisdizione esclusiva dei tribunali di competenza.
  */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Sidebar from '@/components/Sidebar';
-import PrivacyContent from '@/components/PrivacyContent';
-import ScrollToTop from '@/components/ScrollToTop';
-import { getPrivacyPolicy } from '@/lib/privacy';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Home() {
-  const { introLines, sections } = getPrivacyPolicy();
-
+export default function Header() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <Sidebar sections={sections} />
-          <PrivacyContent introLines={introLines} sections={sections} />
-        </div>
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-black/80">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-90">
+          <Image
+            src="/images/app-icon.png"
+            alt="Winspiration Logo"
+            width={32}
+            height={32}
+            className="rounded-lg shadow-sm"
+          />
+          <span className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">
+            Winspiration
+          </span>
+        </Link>
+        <nav className="hidden md:block">
+          <ul className="flex space-x-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <li>
+              <Link href="https://www.pheptech.com" className="hover:text-zinc-900 dark:hover:text-white transition-colors">
+                PhepTech
+              </Link>
+            </li>
+            <li>
+              <span className="text-zinc-400 dark:text-zinc-600 cursor-default">
+                Privacy Policy
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }

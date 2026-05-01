@@ -31,29 +31,56 @@
  * Il presente avviso di copyright sarà regolato e interpretato in conformità con le leggi vigenti. Qualsiasi controversia derivante da o relativa al presente avviso di copyright sarà soggetta alla giurisdizione esclusiva dei tribunali di competenza.
  */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Sidebar from '@/components/Sidebar';
-import PrivacyContent from '@/components/PrivacyContent';
-import ScrollToTop from '@/components/ScrollToTop';
-import { getPrivacyPolicy } from '@/lib/privacy';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Home() {
-  const { introLines, sections } = getPrivacyPolicy();
-
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <Sidebar sections={sections} />
-          <PrivacyContent introLines={introLines} sections={sections} />
+    <footer className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950">
+      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <div className="flex flex-col items-center gap-4 md:items-start">
+            <Link href="https://www.pheptech.com" className="flex items-center gap-3 transition-opacity hover:opacity-90">
+              <Image
+                src="/images/pheptech-logo.jpg"
+                alt="PhepTech Logo"
+                width={40}
+                height={40}
+                className="rounded shadow-sm"
+              />
+              <div className="flex flex-col">
+                <span className="text-sm font-bold text-zinc-900 dark:text-white">PhepTech</span>
+                <span className="text-xs text-zinc-500">by Pietro Guglielmi</span>
+              </div>
+            </Link>
+            <p className="max-w-xs text-center text-xs leading-5 text-zinc-500 md:text-left">
+              PhepTech is the project and brand associated with the development of Winspiration.
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-center gap-2 md:items-end">
+            <div className="flex gap-4 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+              <Link href="mailto:pietrog.developer@gmail.com" className="hover:text-zinc-900 dark:hover:text-white">
+                Contact Support
+              </Link>
+              <Link href="https://www.pheptech.com" className="hover:text-zinc-900 dark:hover:text-white">
+                Website
+              </Link>
+            </div>
+            <p className="text-xs text-zinc-400">
+              &copy; {currentYear} PhepTech di Pietro Guglielmi. All rights reserved.
+            </p>
+          </div>
         </div>
-      </main>
-
-      <Footer />
-      <ScrollToTop />
-    </div>
+        
+        <div className="mt-8 border-t border-zinc-200 pt-8 text-center dark:border-zinc-800">
+          <p className="text-[10px] uppercase tracking-widest text-zinc-400">
+            Enterprise Grade Legal Documentation Site
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }

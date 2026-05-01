@@ -31,29 +31,73 @@
  * Il presente avviso di copyright sarà regolato e interpretato in conformità con le leggi vigenti. Qualsiasi controversia derivante da o relativa al presente avviso di copyright sarà soggetta alla giurisdizione esclusiva dei tribunali di competenza.
  */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Sidebar from '@/components/Sidebar';
-import PrivacyContent from '@/components/PrivacyContent';
-import ScrollToTop from '@/components/ScrollToTop';
-import { getPrivacyPolicy } from '@/lib/privacy';
+import fs from 'fs';
+import path from 'path';
 
-export default function Home() {
-  const { introLines, sections } = getPrivacyPolicy();
+export interface Section {
+  id: string;
+  title: string;
+  level: number;
+  content: string[];
+}
 
-  return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <Sidebar sections={sections} />
-          <PrivacyContent introLines={introLines} sections={sections} />
-        </div>
-      </main>
+export function getPrivacyPolicy() {
+  const filePath = path.join(process.cwd(), 'content', 'privacy-policy.txt');
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const lines = fileContent.split(/\r?\n/);
 
-      <Footer />
-      <ScrollToTop />
-    </div>
-  );
+  const sections: Section[] = [];
+  let currentSection: Section | null = null;
+  const introLines: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const nextLine = lines[i + 1] || '';
+
+    // Check for H1 (===)
+    if (nextLine.startsWith('====')) {
+      if (currentSection) sections.push(currentSection);
+      const title = line.trim();
+      currentSection = {
+        id: slugify(title),
+        title,
+        level: 1,
+        content: []
+      };
+      i++; // Skip underline line
+      continue;
+    }
+
+    // Check for H2 (----)
+    if (nextLine.startsWith('----') && line.trim().length > 0) {
+      if (currentSection) sections.push(currentSection);
+      const title = line.trim();
+      currentSection = {
+        id: slugify(title),
+        title,
+        level: 2,
+        content: []
+      };
+      i++; // Skip underline line
+      continue;
+    }
+
+    if (currentSection) {
+      currentSection.content.push(line);
+    } else {
+      introLines.push(line);
+    }
+  }
+
+  if (currentSection) sections.push(currentSection);
+
+  return { introLines, sections };
+}
+
+function slugify(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
